@@ -56,6 +56,14 @@ window.onscroll = () => {
   });
 };
 
-window.addEventListener("DOMContentLoaded", () => {
-  console.log("DOM fully loaded and parsed");
-});
+function checkIfDocumentFullyLoaded() {
+  if (document.readyState !== 'complete') {
+    console.log("document still loading");
+  }
+
+  else {
+    console.log('document fully loaded');
+  }
+}
+
+setInterval(checkIfDocumentFullyLoaded, 100);
