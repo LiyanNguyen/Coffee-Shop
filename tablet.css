@@ -1,0 +1,53 @@
+html{
+	font-size: 55%;
+}
+
+.header{
+	padding:1.5rem 2rem;
+}
+
+section{
+	min-height: 100vh;
+	padding:2rem;
+}
+
+/* display the menu button in tablet and mobile devices */
+#menu-btn{
+	display: inline-block;
+}
+
+.navbar{
+	position: absolute;
+	top:100%; 
+	right: -100%;
+	background: var(--gray);
+	width: 30rem;
+	height: calc(100vh - 9.5rem);
+	will-change: right;
+}
+
+.navbar.active{
+	right:0;
+}
+
+.navbar-link{
+	color: white;
+	display: block;
+	margin:1.5rem;
+	padding:.5rem;
+	font-size: 2rem;
+}
+
+.home{
+	background-position: left;
+	justify-content: center;
+	text-align: center;
+}
+
+.home .content h3{
+	font-size: 4.5rem;
+}
+
+.home .content p{
+	font-size: 1.5rem;
+}

@@ -8,280 +8,282 @@
 	<!-- Font Awesome CDN -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="tablet.css" media="screen and (max-width: 768px)">
+	<link rel="stylesheet" href="mobile.css" media="screen and (max-width: 450px)">
 	<link rel="icon" href="images/logo.png">
 </head>
 <body>
 <!-- Top Navbar -->
 <header class="header">
-	<a href="#" class="logo">
-		<img src="images/logo.png" alt="">
+	<a href="#">
+		<img class="logo" src="images/logo.png" alt="">
 	</a>
 	<menu class="navbar">
-		<a href="#home" class="active">home</a>
-		<a href="#about">about</a>
-		<a href="#menu">menu</a>
-		<a href="#order">order</a>
-		<a href="#reviews">reviews</a>
-		<a href="#contact">location</a>
-		<a href="#blogs">blogs</a>
+		<a href="#home" class="navbar-link active">home</a>
+		<a href="#about" class="navbar-link">about</a>
+		<a href="#menu" class="navbar-link">menu</a>
+		<a href="#order" class="navbar-link">order</a>
+		<a href="#reviews" class="navbar-link">reviews</a>
+		<a href="#contact" class="navbar-link">location</a>
+		<a href="#blogs" class="navbar-link">blogs</a>
 	</menu>
-	<div class="icons">
-		<div class="fas fa-shopping-cart" id="cart-btn"></div>
-		<div class="fas fa-bars" id="menu-btn"></div>
-	</div>
+	<menu>
+		<li class="navbar-icon fas fa-shopping-cart" id="cart-btn"></li>
+		<li class="navbar-icon fas fa-bars" id="menu-btn"></li>
+	</menu>
 	<!-- Cart Sidebar -->
-	<div class="cart-items-container">
+	<div class="cart-menu">
 		<div class="cart-item">
-			<span class="fas fa-times"></span>
-			<img src="images/product-1.png" alt="">
-			<div class="content">
-				<h3>cart item 1</h3>
-				<div class="price">$15.99/-</div>
+			<span class="cancel-btn fas fa-times"></span>
+			<img class="item-img" src="images/product-1.png" alt="">
+			<div>
+				<h3 class="item-name">cart item 1</h3>
+				<div class="item-price">$15.99/-</div>
 			</div>
 		</div>
 		<div class="cart-item">
-			<span class="fas fa-times"></span>
-			<img src="images/product-2.png" alt="">
-			<div class="content">
-				<h3>cart item 2</h3>
-				<div class="price">$15.99/-</div>
+			<span class="cancel-btn fas fa-times"></span>
+			<img class="item-img" src="images/product-2.png" alt="">
+			<div>
+				<h3 class="item-name">cart item 2</h3>
+				<div class="item-price">$15.99/-</div>
 			</div>
 		</div>
 		<div class="cart-item">
-			<span class="fas fa-times"></span>
-			<img src="images/product-3.png" alt="">
-			<div class="content">
-				<h3>cart item 3</h3>
-				<div class="price">$15.99/-</div>
+			<span class="cancel-btn fas fa-times"></span>
+			<img class="item-img" src="images/product-3.png" alt="">
+			<div>
+				<h3 class="item-name">cart item 3</h3>
+				<div class="item-price">$15.99/-</div>
 			</div>
 		</div>
-		<a href="#" class="btn">checkout now</a>
+		<a href="#" class="checkout-btn btn">checkout now</a>
 	</div>
 </header>
 <!-- Home Section -->
 <section class="home" id="home">
-	<div class="content">
-		<h3>the best coffee in town</h3>
-		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat labore, sint cupiditate distinctio tempora reiciendis.</p>
+	<div class="home-content">
+		<h3 class="home-slogan">the best coffee in town</h3>
+		<p class="home-intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat labore, sint cupiditate distinctio tempora reiciendis. lore</p>
 		<a href="#about" class="btn">about us</a>
 	</div>
 </section>
 <!-- About Section -->
-<section class="about" id="about">
-	<h1 class="heading"> <span>about</span> us </h1>
-	<div class="row">
-		<div class="image">
-			<img src="images/about-img.jpeg" alt="">
+<section id="about">
+	<h1 class="heading"> <span class="heading-emphasize">about</span> us </h1>
+	<div class="about-row">
+		<div class="about-img-container">
+			<img class="about-img" src="images/about-img.jpeg" alt="">
 		</div>
-		<div class="content">
-			<h3>quality beans skillfully brewed</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem? Quod nemo facilis cupiditate. Ex, vel?</p>
-			<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit amet enim quod veritatis, nihil voluptas culpa! Neque consectetur obcaecati sapiente?</p>
+		<div class="about-content">
+			<h3 class="about-slogan">quality beans skillfully brewed</h3>
+			<p class="about-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus qui ea ullam, enim tempora ipsum fuga alias quae ratione a officiis id temporibus autem? Quod nemo facilis cupiditate. Ex, vel?</p>
+			<p class="about-intro">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit amet enim quod veritatis, nihil voluptas culpa! Neque consectetur obcaecati sapiente?</p>
 			<a href="#menu" class="btn">view menu</a>
 		</div>
 	</div>
 </section>
 <!-- Menu Section -->
-<section class="menu" id="menu">
-	<h1 class="heading"> our <span>menu</span> </h1>
-	<div class="box-container">
-		<div class="box">
-			<img src="images/menu-1.png" alt="">
-			<h3>coffee 1</h3>
-			<p>Lorem ipsum dolor sit amet consectetur.</p>
-			<div class="price">$6.99 <span>$90.99</span></div>
+<section id="menu">
+	<h1 class="heading"> our <span class="heading-emphasize">menu</span> </h1>
+	<div class="menu-grid">
+		<div class="menu-item">
+			<img class="menu-item-img" src="images/menu-1.png" alt="">
+			<h3 class="menu-item-name">coffee 1</h3>
+			<p class="menu-item-description">Lorem ipsum dolor sit amet consectetur.</p>
+			<div class="menu-item-price">$6.99 <span class="menu-item-old-price">$9.99</span></div>
 		</div>
-		<div class="box">
-			<img src="images/menu-2.png" alt="">
-			<h3>coffee 2</h3>
-			<p>Lorem ipsum dolor sit amet consectetur.</p>
-			<div class="price">$6.99 <span>$9.99</span></div>
+		<div class="menu-item">
+			<img class="menu-item-img" src="images/menu-2.png" alt="">
+			<h3 class="menu-item-name">coffee 2</h3>
+			<p class="menu-item-description">Lorem ipsum dolor sit amet consectetur.</p>
+			<div class="menu-item-price">$6.99 <span class="menu-item-old-price">$9.99</span></div>
 		</div>
-		<div class="box">
-			<img src="images/menu-3.png" alt="">
-			<h3>coffee 3</h3>
-			<p>Lorem ipsum dolor sit amet consectetur.</p>
-			<div class="price">$6.99 <span>$9.99</span></div>
+		<div class="menu-item">
+			<img class="menu-item-img" src="images/menu-3.png" alt="">
+			<h3 class="menu-item-name">coffee 3</h3>
+			<p class="menu-item-description">Lorem ipsum dolor sit amet consectetur.</p>
+			<div class="menu-item-price">$6.99 <span class="menu-item-old-price">$9.99</span></div>
 		</div>
-		<div class="box">
-			<img src="images/menu-4.png" alt="">
-			<h3>coffee 4</h3>
-			<p>Lorem ipsum dolor sit amet consectetur.</p>
-			<div class="price">$6.99 <span>$9.99</span></div>
+		<div class="menu-item">
+			<img class="menu-item-img" src="images/menu-4.png" alt="">
+			<h3 class="menu-item-name">coffee 4</h3>
+			<p class="menu-item-description">Lorem ipsum dolor sit amet consectetur.</p>
+			<div class="menu-item-price">$6.99 <span class="menu-item-old-price">$9.99</span></div>
 		</div>
-		<div class="box">
-			<img src="images/menu-5.png" alt="">
-			<h3>coffee 5</h3>
-			<p>Lorem ipsum dolor sit amet consectetur.</p>
-			<div class="price">$6.99 <span>$9.99</span></div>
+		<div class="menu-item">
+			<img class="menu-item-img" src="images/menu-5.png" alt="">
+			<h3 class="menu-item-name">coffee 5</h3>
+			<p class="menu-item-description">Lorem ipsum dolor sit amet consectetur.</p>
+			<div class="menu-item-price">$6.99 <span class="menu-item-old-price">$9.99</span></div>
 		</div>
-		<div class="box">
-			<img src="images/menu-6.png" alt="">
-			<h3>coffee 6</h3>
-			<p>Lorem ipsum dolor sit amet consectetur.</p>
-			<div class="price">$6.99 <span>$9.99</span></div>
+		<div class="menu-item">
+			<img class="menu-item-img" src="images/menu-6.png" alt="">
+			<h3 class="menu-item-name">coffee 6</h3>
+			<p class="menu-item-description">Lorem ipsum dolor sit amet consectetur.</p>
+			<div class="menu-item-price">$6.99 <span class="menu-item-old-price">$9.99</span></div>
 		</div>
 	</div>
 </section>
 <!-- Order Section -->
-<section class="order" id="order">
-	<h1 class="heading"> <span>order</span> online </h1>
-	<div class="box-container">
-		<div class="box">
-			<div class="image">
-				<img src="images/product-1.png" alt="">
+<section id="order">
+	<h1 class="heading"> <span class="heading-emphasize">order</span> online </h1>
+	<div class="order-grid">
+		<div class="order-item">
+			<div class="order-item-container">
+				<img class="order-item-img" src="images/product-1.png" alt="">
 			</div>
-			<div class="content">
-				<div class="stars">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star-half-alt"></i>
+			<div>
+				<div class="order-item-stars-container">
+					<i class="order-item-star fas fa-star"></i>
+					<i class="order-item-star fas fa-star"></i>
+					<i class="order-item-star fas fa-star"></i>
+					<i class="order-item-star fas fa-star"></i>
+					<i class="order-item-star fas fa-star-half-alt"></i>
 				</div>
-				<h3>nicaraguan coffee</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolore!</p>
-				<div class="price">$27.99 <span>$30.00</span></div>
+				<h3 class="order-item-name">nicaraguan coffee</h3>
+				<p class="order-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolore!</p>
+				<div class="order-item-price">$27.99 <span class="order-item-old-price">$30.00</span></div>
 				<button class="btn">add to cart</button>
 			</div>
 		</div>
-		<div class="box">
-			<div class="image">
-				<img src="images/product-2.png" alt="">
+		<div class="order-item">
+			<div class="order-item-container">
+				<img class="order-item-img" src="images/product-2.png" alt="">
 			</div>
-			<div class="content">
-				<div class="stars">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star-half-alt"></i>
+			<div>
+				<div class="order-item-stars-container">
+					<i class="order-item-star fas fa-star"></i>
+					<i class="order-item-star fas fa-star"></i>
+					<i class="order-item-star fas fa-star"></i>
+					<i class="order-item-star fas fa-star"></i>
+					<i class="order-item-star fas fa-star-half-alt"></i>
 				</div>
-				<h3>colombian coffee</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolore!</p>
-				<div class="price">$27.99 <span>$30.00</span></div>
+				<h3 class="order-item-name">colombian coffee</h3>
+				<p class="order-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolore!</p>
+				<div class="order-item-price">$27.99 <span class="order-item-old-price">$30.00</span></div>
 				<button class="btn">add to cart</button>
 			</div>
 		</div>
-		<div class="box">
-			<div class="image">
-				<img src="images/product-3.png" alt="">
+		<div class="order-item">
+			<div class="order-item-container">
+				<img class="order-item-img" src="images/product-3.png" alt="">
 			</div>
-			<div class="content">
-				<div class="stars">
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star"></i>
-					<i class="fas fa-star-half-alt"></i>
+			<div>
+				<div class="order-item-stars-container">
+					<i class="order-item-star fas fa-star"></i>
+					<i class="order-item-star fas fa-star"></i>
+					<i class="order-item-star fas fa-star"></i>
+					<i class="order-item-star fas fa-star"></i>
+					<i class="order-item-star fas fa-star-half-alt"></i>
 				</div>
-				<h3>peruvian coffee</h3>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolore!</p>
-				<div class="price">$27.99 <span>$30.00</span></div>
+				<h3 class="order-item-name">peruvian coffee</h3>
+				<p class="order-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, dolore!</p>
+				<div class="order-item-price">$27.99 <span class="order-item-old-price">$30.00</span></div>
 				<button class="btn">add to cart</button>
 			</div>
 		</div>
 	</div>
 </section>
 <!-- Reviews Section -->
-<section class="reviews" id="reviews">
-	<h1 class="heading"> customer <span>reviews</span> </h1>
-	<div class="box-container">
-		<div class="box">
-			<img src="images/pic-1.png" class="user" alt="">
-			<h3>Girth Artichoke</h3>
-			<div class="stars">
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star-half-alt"></i>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+<section id="reviews">
+	<h1 class="heading"> customer <span class="heading-emphasize">reviews</span> </h1>
+	<div class="reviews-grid">
+		<div class="review">
+			<img src="images/pic-1.png" class="user-img" alt="">
+			<h3 class="user-name">Girth Artichoke</h3>
+			<div>
+				<i class="review-star fas fa-star"></i>
+				<i class="review-star fas fa-star"></i>
+				<i class="review-star fas fa-star"></i>
+				<i class="review-star fas fa-star"></i>
+				<i class="review-star fas fa-star-half-alt"></i>
+				<p class="user-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
 			</div>
 		</div>
-		<div class="box">
-			<img src="images/pic-2.png" class="user" alt="">
-			<h3>Parsley Nutrisha</h3>
-			<div class="stars">
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star-half-alt"></i>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+		<div class="review">
+			<img src="images/pic-2.png" class="user-img" alt="">
+			<h3 class="user-name">Parsley Nutrisha</h3>
+			<div>
+				<i class="review-star fas fa-star"></i>
+				<i class="review-star fas fa-star"></i>
+				<i class="review-star fas fa-star"></i>
+				<i class="review-star fas fa-star"></i>
+				<i class="review-star fas fa-star-half-alt"></i>
+				<p class="user-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
 			</div>
 		</div>
-		<div class="box">
-			<img src="images/pic-3.png" class="user" alt="">
-			<h3>Ravi Tone</h3>
-			<div class="stars">
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>
-				<i class="fas fa-star-half-alt"></i>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
+		<div class="review">
+			<img src="images/pic-3.png" class="user-img" alt="">
+			<h3 class="user-name">Ravi Tone</h3>
+			<div>
+				<i class="review-star fas fa-star"></i>
+				<i class="review-star fas fa-star"></i>
+				<i class="review-star fas fa-star"></i>
+				<i class="review-star fas fa-star"></i>
+				<i class="review-star fas fa-star-half-alt"></i>
+				<p class="user-review">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi nulla sit libero nemo fuga sequi nobis? Necessitatibus aut laborum, nisi quas eaque laudantium consequuntur iste ex aliquam minus vel? Nemo.</p>
 			</div>
 		</div>
 	</div>
 </section>
 <!-- LOCATION SECTION -->
-<section class="contact" id="contact">
-	<h1 class="heading"> our <span>location</span>  </h1>
-	<div class="row">
-		<iframe class="map" width="200" height="500" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7079.48513969078!2d121.05062994222294!3d14.649337567170955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b70e3e03cbe9%3A0x56a5e07b59ea8de8!2sQuezon%20Memorial%20Circle!5e0!3m2!1sen!2sph!4v1644656447732!5m2!1sen!2sph" allowfullscreen="" loading="lazy"></iframe>
-		<form action="">
-			<h3>contact us</h3>
-			<div class="inputBox">
-				<span class="fas fa-user"></span>
-				<input type="text" placeholder="your name">
+<section id="contact">
+	<h1 class="heading"> our <span class="heading-emphasize" >location</span>  </h1>
+	<div class="location-flex">
+		<iframe class="location-map" width="200" height="500" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7079.48513969078!2d121.05062994222294!3d14.649337567170955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b70e3e03cbe9%3A0x56a5e07b59ea8de8!2sQuezon%20Memorial%20Circle!5e0!3m2!1sen!2sph!4v1644656447732!5m2!1sen!2sph" allowfullscreen="" loading="lazy"></iframe>
+		<form class="contact" action="">
+			<h3 class="contact-heading">contact us</h3>
+			<div class="contact-inputbox">
+				<span class="contact-input-icon fas fa-user"></span>
+				<input class="contact-input" type="text" placeholder="your name">
 			</div>
-			<div class="inputBox">
-				<span class="fas fa-envelope"></span>
-				<input type="email" placeholder="your email address">
+			<div class="contact-inputbox">
+				<span class="contact-input-icon fas fa-envelope"></span>
+				<input class="contact-input" type="email" placeholder="your email address">
 			</div>
-			<div class="inputBoxMessage">
-				<span class="fas fa-comment"></span>
-				<textarea class="message" placeholder="your message"></textarea>
+			<div class="contact-inputbox contact-input-message">
+				<span class="contact-input-icon fas fa-comment"></span>
+				<textarea class="contact-input message" placeholder="your message"></textarea>
 			</div>
 			<input type="submit" value="send message" class="btn">
 		</form>
 	</div>
 </section>
 <!-- Blogs Section -->
-<section class="blogs" id="blogs">
-	<h1 class="heading"> our <span>blogs</span> </h1>
-	<div class="box-container">
-		<div class="box">
-			<div class="image">
-				<img src="images/blog-1.jpeg" alt="">
+<section id="blogs">
+	<h1 class="heading"> our <span class="heading-emphasize">blogs</span> </h1>
+	<div class="blogs-grid">
+		<div class="blog">
+			<div class="blog-img-container">
+				<img class="blog-img" src="images/blog-1.jpeg" alt="">
 			</div>
-			<div class="content">
-				<p class="title">blog title 1</p>
-				<span>john wick / 12 feb 2022</span>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+			<div class="blog-content">
+				<p class="blog-title">blog title 1</p>
+				<p class="blog-author-date">john wick / 12 feb 2022</p>
+				<p class="blog-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
 				<a href="#" class="btn">read more</a>
 			</div>
 		</div>
-		<div class="box">
-			<div class="image">
-				<img src="images/blog-2.jpeg" alt="">
+		<div class="blog">
+			<div class="blog-img-container">
+				<img class="blog-img" src="images/blog-2.jpeg" alt="">
 			</div>
-			<div class="content">
-				<p class="title">blog title 2</p>
-				<span>john wick / 12 feb 2022</span>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+			<div class="blog-content">
+				<p class="blog-title">blog title 2</p>
+				<p class="blog-author-date">john wick / 12 feb 2022</p>
+				<p class="blog-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
 				<a href="#" class="btn">read more</a>
 			</div>
 		</div>
-		<div class="box">
-			<div class="image">
-				<img src="images/blog-3.jpeg" alt="">
+		<div class="blog">
+			<div class="blog-img-container">
+				<img class="blog-img" src="images/blog-3.jpeg" alt="">
 			</div>
-			<div class="content">
-				<p class="title">blog title 3</p>
-				<span>john wick / 12 feb 2022</span>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
+			<div class="blog-content">
+				<p class="blog-title">blog title 3</p>
+				<p class="blog-author-date">john wick / 12 feb 2022</p>
+				<p class="blog-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, dicta.</p>
 				<a href="#" class="btn">read more</a>
 			</div>
 		</div>
@@ -289,13 +291,13 @@
 </section>
 <!-- Footer Section -->
 <footer class="footer">
-	<h3> <span>follow</span>  us!</h3>
-	<div class="share">
-		<a class="fab fa-facebook-f"></a>
-		<a class="fab fa-twitter"></a>
-		<a class="fab fa-instagram"></a>
-		<a class="fab fa-linkedin"></a>
-		<a class="fab fa-pinterest"></a>
+	<h3 class="footer-heading"> <span class="footer-heading-emphasize">follow</span>  us!</h3>
+	<div class="footer-links-container">
+		<a class="footer-links fab fa-facebook-f"></a>
+		<a class="footer-links fab fa-twitter"></a>
+		<a class="footer-links fab fa-instagram"></a>
+		<a class="footer-links fab fa-linkedin"></a>
+		<a class="footer-links fab fa-pinterest"></a>
 	</div>
 </footer>
 <script src="index.js"></script>
