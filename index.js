@@ -5,14 +5,14 @@ let cartItemContainer = document.querySelector(".cart-menu");
 	
 // toggle the menu sidebar and remove cart sidebar
 menuButton.onclick = () => {
-  navbar.classList.toggle("active");
-  cartItemContainer.classList.remove("active");
+	navbar.classList.toggle("active");
+	cartItemContainer.classList.remove("active");
 };
 
 //toggle the cart sidebar and remove menu sidebar
 cartButton.onclick = () => {
-  cartItemContainer.classList.toggle("active");
-  navbar.classList.remove("active");
+	cartItemContainer.classList.toggle("active");
+	navbar.classList.remove("active");
 };
 
 //======= MENU SCROLLSPY =======//
@@ -34,36 +34,39 @@ menuLinks.forEach((menuLink) => {
 
 // call this function everytime we scroll on the browser window
 window.onscroll = () => {
-  // remove either cart or menu sidebar if they are open on scroll
-  navbar.classList.remove("active");
-  cartItemContainer.classList.remove("active");
+	// remove either cart or menu sidebar if they are open on scroll
+	navbar.classList.remove("active");
+	cartItemContainer.classList.remove("active");
 
-  // amount of pixel we have scrolled downwards from the top-most point of the web page
-  let downwardScroll = window.scrollY;
+	// amount of pixel we have scrolled downwards from the top-most point of the web page
+	let downwardScroll = window.scrollY;
 
-  // for every <section>'s top-most point
-  sectionStartingPointArray.forEach((sectionStart, sectionIndex) => {
-    // check if the current downward scroll is on the middle of each <section>
-    // by using its top-most point minus its height divide by half
-    if (downwardScroll >= sectionStart - sectionHeight / 2) {
-      //if so, we remove all the 'active' classes on all menu links
-      menuLinksArray.forEach((menu) => {
-        menu.classList.remove("active");
-      });
-      //then add the 'active' class on the corresponding menu depending on which section the scroll is currently at
-      menuLinksArray[sectionIndex].classList.add("active");
-    }
-  });
+	// for every <section>'s top-most point
+	sectionStartingPointArray.forEach((sectionStart, sectionIndex) => {
+		// check if the current downward scroll is on the middle of each <section>
+		// by using its top-most point minus its height divide by half
+		if (downwardScroll >= sectionStart - sectionHeight / 2) {
+			//if so, we remove all the 'active' classes on all menu links
+			menuLinksArray.forEach((menu) => {
+				menu.classList.remove("active");
+			});
+			//then add the 'active' class on the corresponding menu depending on which section the scroll is currently at
+			menuLinksArray[sectionIndex].classList.add("active");
+		}
+	});
 };
 
-function checkIfDocumentFullyLoaded() {
-  if (document.readyState !== 'complete') {
-    console.log("document still loading");
-  }
+let checkIfDocumentFullyLoaded = () => {
+	if (document.readyState !== 'complete') {
+		console.log("document still loading");
+		documentRoot.style.setProperty("overflow", "hidden");
+	}
 
-  else {
-    console.log('document fully loaded');
-  }
+	else {
+		console.log('document fully loaded');
+		document.querySelector('.loader').classList.add('load-off');
+		clearInterval(checkPageLoad);
+		console.log('interval remove');
+	}
 }
-
-setInterval(checkIfDocumentFullyLoaded, 100);
+let checkPageLoad = setInterval(checkIfDocumentFullyLoaded, 100);

@@ -4,7 +4,7 @@
 	--theme-color:#d3ad7f;
 	--gray:#13131a;
 	--black:#010103;
-	--border:.1rem solid rgba(255,255,255,.3);	
+	--border:.1rem solid rgba(255,255,255,.3);
 }
 
 *{
@@ -47,8 +47,29 @@ section{
 	padding:2rem 7%;
 }
 
-section:nth-child(even) {
+section:nth-child(odd) {
 	background-color: var(--gray);
+}
+
+.loader {
+	visibility: visible;
+	opacity: 1;
+	display: flex;
+	position: fixed;
+	background-color: blue;
+	height: 100vh;
+	width: 100vw;
+	z-index: 2;
+	color: white;
+	justify-content: center;
+	align-items: center;
+	font-size: 10rem;
+	transition: .5s linear;
+}
+
+.load-off {
+	visibility: hidden;
+	opacity: 0;
 }
 
 .heading{
@@ -89,7 +110,7 @@ section:nth-child(even) {
 	border-bottom: var(--border);
 	position: fixed;
 	top:0; left: 0; right: 0;
-	z-index: 1000;
+	z-index: 1;
 }
 
 .logo {
