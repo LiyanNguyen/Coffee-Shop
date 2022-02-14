@@ -23,7 +23,6 @@ section{
 	background: var(--gray);
 	width: 30rem;
 	height: calc(100vh - 9.5rem);
-	will-change: right;
 }
 
 .navbar.active{

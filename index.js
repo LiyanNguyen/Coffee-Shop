@@ -56,17 +56,15 @@ window.onscroll = () => {
 	});
 };
 
+//======= FUNCTION TO PLAY LOADING ANIMATION =======//
 let checkIfDocumentFullyLoaded = () => {
-	if (document.readyState !== 'complete') {
-		console.log("document still loading");
-		documentRoot.style.setProperty("overflow", "hidden");
-	}
-
-	else {
-		console.log('document fully loaded');
-		document.querySelector('.loader').classList.add('load-off');
-		clearInterval(checkPageLoad);
-		console.log('interval remove');
-	}
+	if (document.readyState === 'complete') {
+    // enable scroll after full page load
+    document.querySelector(":root").style.setProperty("--oflow", "none");
+    // remove the loading screen
+    document.querySelector(".loader").classList.add("load-off");
+    // remove the interval call to this function
+    clearInterval(checkPageLoad);
+  }
 }
 let checkPageLoad = setInterval(checkIfDocumentFullyLoaded, 100);
