@@ -1,3 +1,5 @@
-# coffee-shop
+# Coffee Shop
 
-Demo: https://liyannguyen.github.io/coffee-shop/
+A modern landing page created, with responsive design and animations
+
+Demo: https://liyannguyen.github.io/Coffee-Shop/
