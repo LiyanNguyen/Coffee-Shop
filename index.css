@@ -90,7 +90,9 @@ section:nth-child(odd) {
 	padding:1.5rem 7%;
 	border-bottom: var(--border);
 	position: fixed;
-	top:0; left: 0; right: 0;
+	top:0; 
+	left: 0; 
+	right: 0;
 	z-index: 1;
 }
 
@@ -536,4 +538,20 @@ section:nth-child(odd) {
 
 .footer-links:hover{
 	background-color: var(--theme-color);
+}
+
+.to-top {
+	position: fixed;
+	bottom: 2rem; 
+	right: 2rem;
+	z-index: 1;
+	opacity: 0; /* dont show initially*/
+	pointer-events: none; /* make it unclickable initially */
+	font-size: 4rem;
+	color:  var(--theme-color);
+}
+
+.to-top.active {
+	opacity: 1; /* show it after some scroll */
+	pointer-events: auto; /* make it clickable after some scroll */
 }

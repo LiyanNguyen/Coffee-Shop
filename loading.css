@@ -10,14 +10,18 @@
 	color: white;
 	justify-content: center;
 	align-items: center;
-	font-size: 3rem;
-	transition: .5s linear;
+	transition: 2s ease-in-out;
+	transition-delay: 1s;
 	background-color: var(--theme-color);
+}
+
+.loader-img {
+	width: 35rem;
 }
 
 .load-off {
 	visibility: hidden;
-	opacity: 0;
+	transform: translateX(100%);
 }
 
 .ring
