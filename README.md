@@ -6,7 +6,7 @@ A modern business landing page for a coffee shop made with CSS animations, respo
 design, HTML SEO, and modern UI/UX
 
 ### Demo:
-https://liyannguyen.github.io/Coffee-Shop/
+https://liyannguyen.github.io/The-Coffee-House/
 
 ---
 
