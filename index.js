@@ -73,6 +73,8 @@ window.onscroll = () => {
 //======= FUNCTION TO PLAY LOADING ANIMATION =======//
 let checkIfDocumentFullyLoaded = () => {
   if (document.readyState === "complete") {
+    // make the entire page visible
+    document.querySelector('body').style.setProperty('opacity', '1');
     // remove the loading screen
     document.querySelector(".loader").classList.add("load-off");
     // enable scroll after full page load

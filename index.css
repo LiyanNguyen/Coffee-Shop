@@ -42,6 +42,7 @@ html::-webkit-scrollbar-thumb{
 
 body{
 	background: var(--black);
+	opacity: 0; /*initially make the entire page invisible*/
 }
 
 section{
