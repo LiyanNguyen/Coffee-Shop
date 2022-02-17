@@ -288,6 +288,7 @@ section:nth-child(odd) {
 
 .menu-item:hover{
 	background: var(--black);
+	outline: .1rem solid var(--theme-color);
 }
 
 /* ORDER SECTION */
@@ -305,6 +306,7 @@ section:nth-child(odd) {
 
 .order-item:hover{
 	background-color: var(--gray);
+	outline: .1rem solid var(--theme-color);
 }
 
 
@@ -360,6 +362,11 @@ section:nth-child(odd) {
 	border:var(--border);
 	text-align: center;
 	padding:3rem 2rem;
+}
+
+.review:hover{
+	background-color: var(--black);
+	outline: .1rem solid var(--theme-color);
 }
 
 .user-img{
@@ -420,6 +427,10 @@ section:nth-child(odd) {
 	margin-bottom: 2rem;
 	background:var(--black);
 	border:var(--border);
+}
+
+.contact-inputbox:focus-within {
+	outline: .1rem solid var(--theme-color);
 }
 
 .contact-input-message{
