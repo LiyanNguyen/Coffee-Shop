@@ -5,6 +5,8 @@
 	--gray:#13131a;
 	--black:#010103;
 	--border:.1rem solid rgba(255,255,255,.3);
+	--oflow: hidden;
+	overflow-y: var(--oflow); /*disable scroll by initial page load*/
 }
 
 *{
