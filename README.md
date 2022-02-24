@@ -2,8 +2,7 @@
 
 ![image](https://user-images.githubusercontent.com/50958126/154188640-d8439f49-57a0-4976-9538-59bb2f8b9138.png)
 
-A modern business landing page for a coffee shop made with CSS animations, responsive
-design, HTML SEO, and modern UI/UX
+A modern business landing page for a coffee shop made with CSS animations, responsive design, HTML SEO, and modern UI/UX
 
 ### Demo:
 https://liyannguyen.github.io/The-Coffee-House/
