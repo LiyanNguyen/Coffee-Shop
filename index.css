@@ -184,6 +184,30 @@ section:nth-child(odd) {
 }
 
 /* HOME SECTION */
+
+/* Animation for home section */
+@keyframes fadeUp {
+	from {
+		opacity: 0;
+		transform: translateY(5rem);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 .home{
 	min-height: 100vh;
 	display: flex;
@@ -198,17 +222,26 @@ section:nth-child(odd) {
 }
 
 .home-slogan{
+	opacity: 0;
 	font-size: 6rem;
 	text-transform: uppercase;
 	color:#fff;
+	animation: fadeUp 1s ease forwards;
 }
 
 .home-intro{
+	opacity: 0;
 	font-size: 2rem;
 	font-weight: lighter;
 	line-height: 1.8;
 	padding:1rem 0;
 	color:#eee;
+	animation: fadeUp 1s ease 1s forwards;
+}
+
+.home-content .btn {
+	opacity: 0;
+	animation: fadeIn 1s ease 2s forwards;
 }
 
 /* ABOUT US SECTION */
